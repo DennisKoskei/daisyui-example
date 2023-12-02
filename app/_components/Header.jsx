@@ -3,7 +3,7 @@ import React from "react";
 
 const Header = () => {
     return (
-        <div className="bg-purple-500 text-white py-4">
+        <header className="bg-purple-500 text-white py-4">
             <div className="container mx-auto">
                 <div className="flex justify-between">
                     <Link href="/">
@@ -12,13 +12,17 @@ const Header = () => {
                     <ul className="flex justify-end items-center font-bold space-x-5 tracking-wide">
                         <li>
                             <Link href="/"> Home</Link>
+                        </li>
+                        <li>
                             <Link href="/login"> Login</Link>
+                        </li>
+                        <li>
                             <Link href="/modal"> Modal</Link>
                         </li>
                     </ul>
                 </div>
             </div>
-        </div>
+        </header>
     );
 };
 
